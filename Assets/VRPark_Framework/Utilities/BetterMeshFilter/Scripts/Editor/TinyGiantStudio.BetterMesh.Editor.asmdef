@@ -1,0 +1,16 @@
+{
+    "name": "TinyGiantStudio.BetterMesh.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c5599297241c7ca4883491777ff9691c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
