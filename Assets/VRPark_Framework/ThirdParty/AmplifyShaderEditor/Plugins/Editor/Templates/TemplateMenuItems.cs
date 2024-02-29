@@ -6,6 +6,26 @@ namespace AmplifyShaderEditor
 {
 	public class TemplateMenuItems
 	{
+		[MenuItem( "Assets/Create/Amplify Shader/BOXOPHOBIC/The Vegetation Engine/Element", false, 85 )]
+		public static void ApplyTemplateBOXOPHOBICTheVegetationEngineElement()
+		{
+			AmplifyShaderEditorWindow.CreateConfirmationTemplateShader( "f4f273c3bb6262d4396be458405e60f9" );
+		}
+		[MenuItem( "Assets/Create/Amplify Shader/BOXOPHOBIC/The Vegetation Engine/Lit", false, 85 )]
+		public static void ApplyTemplateBOXOPHOBICTheVegetationEngineLit()
+		{
+			AmplifyShaderEditorWindow.CreateConfirmationTemplateShader( "28cd5599e02859647ae1798e4fcaef6c" );
+		}
+		[MenuItem( "Assets/Create/Amplify Shader/BOXOPHOBIC/The Vegetation Engine/Multi", false, 85 )]
+		public static void ApplyTemplateBOXOPHOBICTheVegetationEngineMulti()
+		{
+			AmplifyShaderEditorWindow.CreateConfirmationTemplateShader( "0f19abbca861964499319ef2f87fcde2" );
+		}
+		[MenuItem( "Assets/Create/Amplify Shader/BOXOPHOBIC/The Vegetation Engine/Unlit", false, 85 )]
+		public static void ApplyTemplateBOXOPHOBICTheVegetationEngineUnlit()
+		{
+			AmplifyShaderEditorWindow.CreateConfirmationTemplateShader( "9b6e5313c680dab43a13a292e0b6d88f" );
+		}
 		[MenuItem( "Assets/Create/Amplify Shader/Custom Render Texture/Initialize", false, 85 )]
 		public static void ApplyTemplateCustomRenderTextureInitialize()
 		{
