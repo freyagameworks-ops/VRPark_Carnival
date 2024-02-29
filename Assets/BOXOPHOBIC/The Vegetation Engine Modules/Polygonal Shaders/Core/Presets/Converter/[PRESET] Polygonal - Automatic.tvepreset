@@ -1,0 +1,47 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+ 
+InfoTitle Polygonal
+InfoPreset Use this preset to convert low poly assets. 
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Props/Plants 1
+
+*******************************************************************
+
+OutputMeshes DEFAULT
+
+Mesh SetVariation GET_MASK_FROM_CHANNEL 0
+Mesh SetOcclusion GET_MASK_FROM_CHANNEL 1
+Mesh SetDetailMask GET_MASK_FROM_CHANNEL 2
+Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+Mesh SetHeight GET_MASK_PROCEDURAL 4
+Mesh SetMotion2 GET_MASK_PROCEDURAL 4
+Mesh SetMotion3 GET_MASK_PROCEDURAL 4
+
+Mesh SetPivots NONE
+
+Include Unity Lit Commons
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Material SET_SHADER_BY_NAME BOXOPHOBIC/The Vegetation Engine/Geometry/Prop Standard Lit (Polygonal)
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Material SET_SHADER_BY_NAME BOXOPHOBIC/The Vegetation Engine/Geometry/Plant Standard Lit (Polygonal)
+}
+
+Material SET_FLOAT _RenderClip 0
+Material SET_FLOAT _RenderCull 2
+
+// Set Default Values
+Material SET_FLOAT _ColorsPositionMode 1
+Material SET_FLOAT _ExtrasPositionMode 1
+Material SET_FLOAT _MainSmoothnessValue 0.2
