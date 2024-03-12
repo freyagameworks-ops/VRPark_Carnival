@@ -64,3 +64,10 @@ crashlytics-build.properties
 UserSettings/Layouts/CurrentMaximizeLayout.dwlt
 UserSettings/Layouts/default-2022.dwlt
 .erp
+Assets/VRPark_Framework/Utilities/BetterMeshFilter.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Artworks.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Scripts.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Artworks/DarkModeIconBG.png.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Scripts/Editor.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Scripts/Editor/ScaleSettingsProvider.cs.meta
+Assets/VRPark_Framework/Utilities/BetterMeshFilter/Scripts/Editor/TinyGiantStudio.BetterMesh.Editor.asmdef.meta
