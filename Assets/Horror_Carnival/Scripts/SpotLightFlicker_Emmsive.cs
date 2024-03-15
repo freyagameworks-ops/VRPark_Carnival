@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpotLightFlicker : MonoBehaviour
+public class SpotLightFlicker_Emmsive : MonoBehaviour
 {
     public Light spotLight;
     //time between main flicker
@@ -23,19 +23,19 @@ public class SpotLightFlicker : MonoBehaviour
     //public bool PowerLossEnable;
     //public ParticleSystem sparks;
 
-    //[Header("Disable Emmisive")]
-    //private int x;
-    //public Material[] emmisive;
-    //Renderer renderers;
+    [Header("Disable Emmisive")]
+    private int x;
+    public Material[] emmisive;
+    public Renderer renderers;
 
     private Coroutine flickerSpotlightCoroutine;
 
     void Start()
     {
-        //x= 0;
+        x= 0;
         //renderers = GetComponent<Renderer>();
-        //renderers.enabled = true;
-        //renderers.sharedMaterial = emmisive[x];
+        renderers.enabled = true;
+        renderers.sharedMaterial = emmisive[x];
 
         //check if there is a light
         if (spotLight == null)
@@ -55,10 +55,10 @@ public class SpotLightFlicker : MonoBehaviour
 
         flickerSpotlightCoroutine = StartCoroutine(flickerSpotLight());
     }
-    //private void Update()
-    //{
-    //    renderers.sharedMaterial = emmisive[x];
-    //}
+    private void Update()
+    {
+        renderers.material = emmisive[x];
+    }
     IEnumerator flickerSpotLight()
     {
         //initial random values to base flickering off
@@ -84,9 +84,9 @@ public class SpotLightFlicker : MonoBehaviour
                 spotLight.intensity = minIntensityVariation;
                 yield return new WaitForSeconds(Random.Range(burstInterval * .1f, burstInterval * 1.5f));
                 spotLight.intensity = maxIntensity;
-                //x = 1;
+                x = 1;
                 yield return new WaitForSeconds(Random.Range(burstInterval * .1f, burstInterval));
-                //x = 0;
+                x = 0;
                 minIntensityVariation = Random.Range(minIntensity, minIntensity * 1.2f);
 
                 minIntensityEmission = minIntensityVariation / maxIntensity;
