@@ -190,12 +190,12 @@ Material:
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
-    - _AlphaDstBlend: 10
+    - _AlphaDstBlend: 1
     - _AlphaRemapMax: 1
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _BlendMode: 0
+    - _BlendMode: 1
     - _BlendOp: 0
     - _BumpScale: 1
     - _CameraFadingEnabled: 1
@@ -224,7 +224,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
-    - _DstBlend: 10
+    - _DstBlend: 1
     - _EmissionEnabled: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
@@ -321,10 +321,10 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1.4980392, g: 1.4980392, b: 1.4980392, a: 1}
+    - _BaseColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 1, g: 1, b: 0, a: 0}
-    - _Color: {r: 1.4980392, g: 1.4980392, b: 1.4980392, a: 1}
+    - _Color: {r: 0.42452827, g: 0.42452827, b: 0.42452827, a: 1}
     - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
